@@ -1,0 +1,29 @@
+{
+  "name": "leo-cache",
+  "version": "1.0.0",
+  "description": "Cache for the Leo Platform",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test1": "jest $NODE_DEBUG_OPTION --coverage",
+    "test": "node $NODE_DEBUG_OPTION node_modules/jest/bin/jest.js --coverage --detectOpenHandles"
+  },
+  "author": "Leo",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/LeoPlatform/leo-cache"
+  },
+  "keywords": [
+    "Cache",
+    "LeoInsights",
+    "LeoPlatform",
+    "Leo"
+  ],
+  "dependencies": {},
+  "devDependencies": {
+    "jest": "^23.4.0"
+  }
+}
