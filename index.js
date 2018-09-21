@@ -16,18 +16,19 @@ async function refresh(name, func) {
             listeners: []
         };
         let v = await func(name);
-        if (c.onRefresh && c.onRefresh.listeners.length) {
-            c.onRefresh.listeners.map(f => f());
-        }
         cache[name] = {
             ts: Date.now(),
             v: v,
             shouldRefresh: false,
             refreshing: []
         };
+        if (c.onRefresh && c.onRefresh.listeners.length) {
+            c.onRefresh.listeners.map(f => f());
+        }
         return true;
     }
 }
+
 function getFromCache(name, expireDuration, overlyStaleDuration) {
     //Does it exist
     if (!(name in cache)) {

@@ -1,6 +1,6 @@
 {
   "name": "leo-cache",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Cache for the Leo Platform",
   "main": "index.js",
   "directories": {
